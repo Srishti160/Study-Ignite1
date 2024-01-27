@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .profile-page {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .profile-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url(https://tse3.mm.bing.net/th?id=OIP.lnRmdRs3U3hlynhXzEy5xgHaHa&pid=Api&P=0&h=180);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .profile-input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .profile-btn {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            background-color: #1162b3;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .profile-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+	<div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <div class="user-info">
+                        <img class="user-profile rounded-circle" src="user_icon.png" width="120" height="120" alt="Profile picture">
+                        <h3 class="user-name mt-2">Hello User!</h3>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/homepage/Study Ignite.html">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/profile page/html.html">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/todo/html.html">
+                                To-Do
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dynamicalander/index.html">
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/notes/index.html">
+                                Notes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/clock/html.html">
+                                Clock
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Future Scope
+                            </a>
+                        </li><br><br><br><br><br>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/landing page/main.html">
+                                Log-Out
+                            </a>
+                            </li><br><br>
+                        
+                    </ul>
+                </div>
+            </nav>
+    <div class="profile-page">
+        <div class="profile-container">
+            <div class="profile-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <input type="text" class="profile-input" placeholder="UserID">
+            <input type="text" class="profile-input" placeholder="Name">
+            <input type="email" class="profile-input" placeholder="Email">
+            <input type="tel" class="profile-input" placeholder="Phone">
+            <button class="profile-btn">Edit</button>
+
+        </div>
+    </div>
+</div>
+</div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html> 
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Preloader</title>
+    <link rel="Stylesheet" type="text/css" 
+    href="style.css">
+
+    <script>
+        // Set the time limit for the loading page in milliseconds (e.g., 5000ms = 5 seconds)
+        const timeLimit = 8000;
+      
+        // Function to redirect to the main page after the specified time
+        function redirectToMainPage() {
+          location.href = "homepage/Study Ignite.html"
+        }
+      
+        // Wait for the specified time and then redirect
+        setTimeout(redirectToMainPage, timeLimit);
+    </script>
+      
+        
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader_bar"></div>
+        <div class="loader_bar"></div>
+        <div class="loader_bar"></div>
+        <div class="loader_bar"></div>
+        <div class="loader_bar"></div>
+        <div class="loader_ball"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    
+    /* section */
+    body{
+        background-image:url(/sidebar/bg.png); 
+        background-size: cover;
+        background-repeat:no-repeat; 
+        border-left: 100px;
+    }
+    
+        </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <div class="user-info">
+                        <img class="user-profile rounded-circle" src="user_icon.png" width="120" height="120" alt="Profile picture">
+                        <h3 class="user-name mt-2">Hello User!</h3>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/profile page/html.html">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/todo/html.html">
+                                To-Do
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dynamicalander/index.html">
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/notes/index.html">
+                                Notes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/clock/html.html">
+                                Clock
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/clock/html.html">
+                                Future Scope
+                            </a>
+                        </li><br><br><br><br><br>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/clock/html.html">
+                                Log-Out
+                            </a>
+                            </li><br><br>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" align="middle">
+                <!-- Main content goes here -->
+                
+            </main>
+        </div>
+    </div>
+</body>
+</html>

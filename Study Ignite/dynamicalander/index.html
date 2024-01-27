@@ -1,0 +1,162 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Calendar</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <div class="user-info">
+                        <img class="user-profile rounded-circle" src="user_icon.png" width="120" height="120" alt="Profile picture">
+                        <h3 class="user-name mt-2">Hello User!</h3>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/homepage/Study Ignite.html">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/profile page/html.html">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/todo/html.html">
+                                To-Do
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dynamicalander/index.html">
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/notes/index.html">
+                                Notes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/clock/html.html">
+                                Clock
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/clock/html.html">
+                                Future Scope
+                            </a>
+                        </li><br><br><br><br><br>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/landing page/main.html">
+                                Log-Out
+                            </a>
+                            </li><br><br>
+                        
+                    </ul>
+                </div>
+            </nav>
+		
+	<div w3-include-html="content.html"></div>
+	<!-- Main wrapper for the calendar application -->
+	<div class="wrapper" id="wrapper">
+		<div class="container-calendar">
+			<div id="left">
+				<h1>Calendar</h1>
+				<div id="event-section">
+					<h3>Add Task</h3>
+					<input type="date" id="eventDate">
+					<input type="text"
+						id="eventTitle"
+						placeholder="Task Title">
+					<input type="text"
+						id="eventDescription"
+						placeholder="Task Description">
+					<button id="addEvent" onclick="addEvent()">
+						Add
+					</button>
+				</div>
+				<div id="reminder-section">
+					<h3>Reminders</h3>
+					<!-- List to display reminders -->
+					<ul id="reminderList">
+						<li data-event-id="1">
+							<strong>Task Title</strong>
+							- Task Description on Event Date
+							<button class="delete-event"
+								onclick="deleteEvent(1)">
+								Delete
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="right">
+				<h3 id="monthAndYear"></h3>
+				<div class="button-container-calendar">
+					<button id="previous"
+							onclick="previous()">
+						‹
+					</button>
+					<button id="next"
+							onclick="next()">
+						›
+					</button>
+				</div>
+				<table class="table-calendar"
+					id="calendar"
+					data-lang="en">
+					<thead id="thead-month"></thead>
+					<!-- Table body for displaying the calendar -->
+					<tbody id="calendar-body"></tbody>
+				</table>
+				<div class="footer-container-calendar">
+					<label for="month">Jump To: </label>
+					<!-- Dropdowns to select a specific month and year -->
+					<select id="month" onchange="jump()">
+						<option value=0>Jan</option>
+						<option value=1>Feb</option>
+						<option value=2>Mar</option>
+						<option value=3>Apr</option>
+						<option value=4>May</option>
+						<option value=5>Jun</option>
+						<option value=6>Jul</option>
+						<option value=7>Aug</option>
+						<option value=8>Sep</option>
+						<option value=9>Oct</option>
+						<option value=10>Nov</option>
+						<option value=11>Dec</option>
+					</select>
+					<!-- Dropdown to select a specific year -->
+					<select id="year" onchange="jump()"></select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<!-- Include the JavaScript file for the calendar functionality -->
+	<script src="./script.js"></script>
+</main>
+	
+</body>
+
+</html>

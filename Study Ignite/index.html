@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <title>Login</title>
+        <link rel="Stylesheet" href="regstyle.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="" id="myForm" onsubmit="validateForm(event)">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="User ID" id="userid" name="userid" minlength="6" required>
+                    <i class='bx bxs-user'></i>
+                    <span id="idError" class="error"></span>
+                </div>
+                
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="pass" name="pass" required>
+                    <i class='bx bxs-lock-alt'></i>
+                    <span id="passError" class="error"></span>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Password </label>
+                    <a href="forgot.html">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn"><a href="loading.html">Login</a></button>
+                <div class="register-link">
+                <p>Don't have an account?<br><a href="register.html">Register</a></p></div>
+            </form>
+        </div>
+    </body>
+</html>

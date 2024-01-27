@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+	<title>Landing Page</title>
+
+</head>
+<body>
+	<nav>
+		<div class="heading">Let's Study</div>
+		<span class="sideMenuButton"
+			onclick="openNavbar()">
+			☰
+		</span>
+
+		<div class="navbar">
+			<ul>
+				<li><a href="#My Projects" class="btn">About</a></li>
+				<li><a href="/register.html">Sign Up</a></li>
+				<li><a href="/termsconditn.html">Terms and Condition</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<div class="line" id="Home">
+		<div class="side1">
+			<h1>Study Ignite</h1>
+            <h3>Your Ultimate Study Planner and Progress Tracker</h3>
+			<button>
+				<a href="#">
+					Explore More
+				</a>
+			</button>
+		</div>
+		<div class="side2">
+			<img src="image.jpg" , width="700">
+		</div>
+	</div>
+
+	<section class="about" id="My Projects">
+		<div class="content">
+			<div class="title">
+				<span>About The Website</span>
+			</div>
+			<div class="boxes">
+				<div class="box">
+					<div class="topic">
+						<a href="" target="_blank">
+						<u>What is Study-Ingite?</u>
+						</a>
+					</div><br>
+					<p>
+						It is a study planner and progress tracker website, a digital tool designed to assist students 
+                        in managing their study schedules and tracking their academic progress effectively.
+
+					</p>
+				</div>
+				<div class="box">
+
+					<div class="topic">
+						<a href="" target="_blank">
+							<u>AIM</u>
+						</a>
+					</div><br>
+					<p>
+						It aims to address the challenges students face in organizing their study time efficiently
+                         and monitoring their academic progress, providing them with a comprehensive solution.
+
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="topic">
+						<a href="" target="_blank">
+							<u>Tools</u>
+						</a>
+					</div><br>
+					<p>
+						The student study planner incorporates features like personalized study schedules, 
+                        progress tracking, goal setting, reminders, notes, and subject-wise organization.
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="content">
+			<div class="title"><span>Sign Up</span></div>
+			<div class="contactMenu">
+				<div class="input1">
+					<div class="label1">Your Name</div>
+					<div class="input2">
+						<input type="text"
+							placeholder="Enter your Name here">
+					</div>
+					<div class="label1">
+						<label>Your Email</label>
+					</div>
+					<div class="input2">
+						<input type="text"
+							placeholder="Enter your Email here">
+					</div>
+					<div class="label1">
+						<label>Your Password</label>
+					</div>
+					<div class="input2">
+						<input type="text"
+							placeholder="Enter your Password here">
+					</div>
+					<div class="button">
+						<button type="submit" class="btn"><a href="/loading.html">Sign Up</a></button>
+					</div>
+				</div>
+				<div class="input3">
+					<div class="rightside1">
+						<div class="title1">
+							<span>
+								Contact Us
+							</span>
+						</div>
+						<div class="content1">
+							<b>Email-</b> studyignite@gmail.com <br>
+                            <b>LinkedIn-</b> Study Ignite <br>
+                            <b>Phone no.-</b> 93534xxxxx
+						</div>
+						<div class="title1">
+							<span>More Information</span>
+						</div>
+						<div class="content1">
+							Greetings to all the Igniters out there!
+							We welcome you to the platform where we
+							strive to offer the best study tracking 
+                            tools. This platform has been designed
+							for every Igniters wishing to track 
+							their study plans.<br>Thank you for choosing 
+							and supporting us!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer section -->
+	<footer>
+		<div class="footer">
+			<span> Created By Study-Ingite Team </span>
+		</div>
+	</footer>
+</body>
+<script>
+    function openNavbar() {
+	document.getElementById("sideNavigationBar")
+		.style.width = "50%";
+}
+function closeNavbar() {
+	document.getElementById("sideNavigationBar")
+		.style.width = "0%";
+}
+</script>
+</html>

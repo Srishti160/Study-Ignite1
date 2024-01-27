@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' type='text/css' ' media="screen" href="styles.css"/>
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+              <div class="sidebar-sticky">
+                  <div class="user-info">
+                      <img class="user-profile rounded-circle" src="user_icon.png" width="120" height="120" alt="Profile picture">
+                      <h3 class="user-name mt-2">Hello User!</h3>
+                  </div>
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/homepage/Study Ignite.html">
+                              <span data-feather="home"></span>
+                              Dashboard <span class="sr-only">(current)</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/profile page/html.html">
+                              Profile
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/todo/html.html">
+                              To-Do
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/dynamicalander/index.html">
+                              Calendar
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/notes/index.html">
+                              Notes
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/clock/html.html">
+                              Clock
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Future Scope
+                          </a>
+                      </li><br><br><br><br><br>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/landing page/main.html">
+                              Log-Out
+                          </a>
+                          </li><br><br>
+                      
+                  </ul>
+              </div>
+          </nav>
+    <div class="wrapper">
+      <div class="task-input">
+        <ion-icon name="create-outline"></ion-icon>
+        <input type="text" placeholder="Add a New Task + Enter" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+
+ body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(228, 241, 255);
+}
+
+.notes-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+#note-input {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(153, 207, 255);
+}
+
+button {
+    background-color: rgb(11, 0, 128);;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(27, 13, 176);;
+}
+
+.note {
+    background-color: rgb(153, 207, 255);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note .delete-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.note .delete-button:hover {
+    background-color: #dd0000;
+}
